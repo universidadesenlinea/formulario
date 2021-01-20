@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de inscripción</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilo_formulario.css">
+</head>
+
+<body>
+ 
+  <!--
+ <div class="slider center">
+     <ul>
+        <li><img src= "img/banner.png" alt=""  ></li>
+        <li><img src= "img/2.png" alt=""  ></li>
+         <li><img src= "img/3.png" alt=""  ></li>
+         <li><img src= "img/4.png" alt=""  ></li>
+         <li><img src= "img/5.png" alt=""  ></li>
+     </ul>
+ </div>
+ -->
+      <!-- banner -->
+  <div id="banner"></div>
+   <!-- fin banner -->
+   
+   <div id="texto_diseño_web">
+      <h2>Curso de Diseño Páginas Web (HTML5)</h2>
+      <h3> En este curso se pretende que los alumnos aprendan los fundamentos de Diseño en Páginas web, utilizando hipertexto, añadiendo los enlaces, gráficos, tablas, formularios etc. y elementos de maquetación del lenguaje HTML dinámico, de forma que sean capaces de programar tales páginas.</h3>
+  </div>
+   
+    <!-- completar formulario -->
+  <div id="completar_formulario">
+      <h2>COMPLETAR FORMULARIO</h2>
+  </div>
+   <!-- fin completar formulario -->
+   
+  	<main>
+		<form action="" class="formulario" id="formulario">
+
+			<!-- Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Carl's Jr." required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre tiene que ser de 4 a 16 letras.</p>
+			</div>
+			
+            <!-- Apellido -->
+			<div class="formulario__grupo" id="grupo__apellido">
+				<label for="apellido" class="formulario__label">Apellido</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Carl's Jr." required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El apellido tiene que ser de 4 a 16 letras.</p>
+			</div>
+			
+			
+            <!-- Direccion completa -->
+			<div class="formulario__grupo" id="grupo__direccion">
+				<label for="direccion" class="formulario__label">Dirección</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Cuidad,Estado,Calle" required>
+					 <i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La dirección tiene que ser de 4 a 40 letras y solo puede contener numeros, comas y guion bajo.</p>
+			</div>
+			
+            <!-- Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="87650241" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+			
+			<!-- Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+			<!-- Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+			
+			<!-- BOTONES DE CURSOS DE DISEÑO WEB -->
+          <section> 
+          <!-- Boton Diseño Web Básico   -->
+                <div id="web_basico">
+                 <h2  class="titulo_web_basico"> <i class="fa fa-code" aria-hidden="true"></i> Diseño Web Básico</h2>
+                       <p> Con el desarrollo de la web surgieron nuevos lenguajes de programación pensados para hacer las páginas más rápidas y seguras o para lograr una mayor interacción con el usuario.</p>
+                       <label id="checkbox_web_basico1">C$120</label>
+                       <label id="matriculacion_web_basico1"><input type="checkbox" onclick="alert('Si es antiguo estudiante se le aplica un descuento de 5%')">Ex-alumno</label><br><br><br><br>
+                    <label id="matriculacion_web_basico2"><input type="checkbox" onclick="alert('Si esta actualmente matriculado y es familiar de un antiguo estudiante se le aplica un descuento de 2%')">Familiar matriculado</label>
+                    <script>
+                        function cambiar1(){
+                            document.getElementById("checkbox_web_basico1").innerHTML = "Descuento aplicado C$70";
+                        }
+                    
+                        document.getElementById("matriculacion_web_basico1").onclick = function(){
+                            cambiar1();
+                        }
+                  
+                        function cambiar2(){
+                            document.getElementById("checkbox_web_basico1").innerHTML = "Descuento aplicado C$100";
+                        }
+                        
+                        document.getElementById("matriculacion_web_basico2").onclick = function(){
+                            cambiar2();
+                        }
+                    </script>
+                     
+                </div>
+                
+                <!-- Fin boton Diseño Web Básico  -->
+                
+            <!-- Boton Dreamweaver  -->
+                <div id="curso_dreamweaver">
+                      <h2 class="titulo_curso_dreamweaver"> <i class="fa fa-desktop" aria-hidden="true"></i> Dreamweaver</h2>
+                      <p>Es un programa de la empresa Adobe que sirve para diseño y programación web, básicamente para hacer o modificar páginas de Internet. Para utilizarlo necesitas al menos algún conocimiento de lenguaje Html o PHP, estos son códigos o lenguajes que se utilizan para desarrollar sitios web.</p>
+                      <label id="checkbox_curso_dreamweaver1">C$150</label>
+                      <label id="matriculacion_curso_dreamweaver1"><input type="checkbox" onclick="alert('Si es antiguo estudiante se le aplica un descuento de 5%')">Ex-alumno</label><br><br><br><br>
+                    <label id="matriculacion_curso_dreamweaver2"><input class="matriculacion" type="checkbox" onclick="alert('Si esta actualmente matriculado y es familiar de un ex-alumno se le aplica un descuento de 2%')">Familiar matriculado</label>
+                    
+                    <script>
+                        function cambiar3(){
+                            document.getElementById("checkbox_curso_dreamweaver1").innerHTML = "Descuento aplicado C$100";
+                        }
+                    
+                        document.getElementById("matriculacion_curso_dreamweaver1").onclick = function(){
+                            cambiar3();
+                        }
+                   
+                        function cambiar4(){
+                            document.getElementById("checkbox_curso_dreamweaver1").innerHTML = "Descuento aplicado C$130";
+                        }
+                        
+                        document.getElementById("matriculacion_curso_dreamweaver2").onclick = function(){
+                            cambiar4();
+                        }
+                    </script>
+                 
+                </div>
+            <!-- Fin Boton Dreamweaver  -->
+            
+            
+            <!-- Boton Diseño Web nivel Medio  -->
+                <div id="Web_nivel_Medio">
+                       <h2 class="titulo_nivel_Medio"><i class="fab fa-bootstrap"></i> Diseño Web nivel Medio</h2>
+                       <p>Es un programa de la empresa Adobe que sirve para diseño y programación web, básicamente para hacer o modificar páginas de Internet. Para utilizarlo necesitas al menos algún conocimiento de lenguaje Html o PHP, estos son códigos o lenguajes que se utilizan para desarrollar sitios web.</p>
+                       <label id="nivel_Medio_checkbox1">C$200</label>
+                       <label id="nivel_Medio_matriculacion1"><input type="checkbox" class="matriculacion" onclick="alert('Si es antiguo estudiante se le aplica un descuento de 5%')">Ex-alumno</label><br><br><br><br>
+                    <label id="nivel_Medio_matriculacion2"><input type="checkbox" onclick="alert('Si esta actualmente matriculado y es familiar de un ex-alumno se le aplica un descuento de 2%')">Familiar matriculado</label>
+                    
+                    <script>
+                        function cambiar5(){
+                            document.getElementById("nivel_Medio_checkbox1").innerHTML = "Descuento aplicado C$150";
+                        }
+                    
+                        document.getElementById("nivel_Medio_matriculacion1").onclick = function(){
+                            cambiar5();
+                        }
+                
+                        function cambiar6(){
+                            document.getElementById("nivel_Medio_checkbox1").innerHTML = "Descuento aplicado C$180";
+                        }
+                        
+                        document.getElementById("nivel_Medio_matriculacion2").onclick = function(){
+                            cambiar6();
+                        }
+                    </script>
+                    
+                </div>
+          
+            <!-- Fin boton Diseño Web nivel medio  -->
+                    
+            <!-- Boton Diseño Web nivel avanzado  -->
+                <div id="Web_nivel_avanzado">
+                    <h2 class="titulo_nivel_avanzado"><i class="fa fa-html5" aria-hidden="true"></i> Diseño Web nivel avanzado</h2>
+                    <p>Pretende ampliar y completar la formación recibida por el alumno en el curso básico ya que este curso servirá a los alumnos para profundizar en la utilización de todas las tecnologías y poder llevar a cabo el desarrollo de aplicaciones web de tamaño medio y grande con conocimientos sobre HTML, CSS, Bootstrap, jQuery, PHP y MySQL</p>
+                    <label id="nivel_avanzado_checkbox1">C$240</label>
+                    <label id="matriculacion_nivel_avanzado1"><input type="checkbox" onclick="alert('Si es antiguo estudiante se le aplica un descuento de 5%')">Ex-alumno</label><br><br><br><br>
+                    <label id="matriculacion_nivel_avanzado2"><input type="checkbox" onclick="alert('Si esta actualmente matriculado y es familiar de un ex-alumno se le aplica un descuento de 2%')">Familiar matriculado</label>
+                    
+                    <script>
+                        function cambiar7(){
+                            document.getElementById("nivel_avanzado_checkbox1").innerHTML = "Descuento aplicado C$190";
+                        }
+                    
+                        document.getElementById("matriculacion_nivel_avanzado1").onclick = function(){
+                            cambiar7();
+                        }
+                    
+                        function cambiar8(){
+                            document.getElementById("nivel_avanzado_checkbox1").innerHTML = "Descuento aplicado C$220"
+                        }
+                        
+                        document.getElementById("matriculacion_nivel_avanzado2").onclick = function(){
+                            cambiar8();
+                        }
+                    </script>
+                    
+                </div>
+                <!-- Fin boton Diseño Web nivel medio  -->
+                
+          </section>
+          <!-- Grupo: Terminos y Condiciones -->
+          
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label"><input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" required>Acepto los Terminos y Condiciones</label>
+			</div>
+			
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button><input type="reset" class="boton_reset">
+			</div>
+			
+			</form>
+	</main> 
+
+   <script src="https://kit.fontawesome.com/627ac3539e.js" crossorigin="anonymous"></script>
+
+   <script src="js/formulario.js"></script>
+    
+</body>
+
+</html>
